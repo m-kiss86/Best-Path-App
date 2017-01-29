@@ -1,0 +1,120 @@
+<?xml version = "1.1" encoding = "iso-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+	
+<html xmlns = "http://www.w3.org/1999/xhtml"> 
+	<head> 
+		<title> Model of a network of nodes </title> 
+		<script type = "text/javascript" src="networkModel.js"> > //load functions and create global variables for best path tool
+		</script> 
+		
+		<style type = 'text/css'>
+			body			{ background-color: #E8E8E8;
+							  font-family: Calibri,Tahoma,Arial,Verdana;
+							  font-size: 20px;}
+			
+			h1				{ background-color: #63AB62; 
+							  color: #F9FFFF;	
+							  width: 100%;
+							  margin-top: 0;
+							  margin-left: auto; 
+							  margin-right: auto;
+							  text-align: center;}	
+			
+			table			{  width: 90%; 
+							   text-align: center;			
+							   margin-left: auto;
+							   margin-right: auto;
+							   margin-bottom: 2em;
+							   background-color: #FFFFFF;}
+			
+			table.center	{ background-color: #3063A5;
+							  color: #F9FFFF;
+							  width: 50%;
+							  margin-top: 0.5em;
+							  margin-bottom: 2em;} 
+			
+			td.width		{ width: 30%;
+							  background-color: #E8E8E8;
+							  border-style: none;}	
+			
+			.hilite tr:hover{ background-color: #E8E8E8;}
+							  
+			#header			{ margin-top: 1em;
+							  margin-left: auto;
+							  margin-right: auto;
+							  width: 60%;}
+			
+			#content		{ margin-left: auto;
+							  margin-right: auto;
+							  width: 60%;
+							  border: 1px solid #D9D9D9;
+							  background-color: #F0F8FF;}
+							  
+			#footer			{ margin-top: 1em;
+							  margin-bottom: 0;
+							  margin-left: auto;
+							  margin-right: auto;
+							  width: 60%;
+							  text-align: center;}	
+			
+			.xhtml		{ border-style: none;
+						  margin-left: 1em;}	
+							
+		</style>
+	</head> 
+	<body onload="init()"> 		
+		<div id = "header">
+			<h1>Search Routes</h1>
+		</div>
+			<div id = 'content'>
+				<form id = 'network' action = "">
+				<table  style = 'background-color: #E8E8E8; color: #000000; width: 30%; margin-bottom: 0;'>
+				<caption>Choose Network</caption>
+					<tr>
+						<td>
+							<select id = 'changeNetwork'>
+								<option selected = 'selected'>Choose Network</option>
+								<option value = 'Network1'>Network1</option>
+								<option value = 'Network2'>Network2</option>
+							</select>
+						</td>
+					</tr>
+				</table>	
+				<p style = 'text-align: center; margin-botom: 0; margin-top: 1;'>
+					<span id = 'image'></span>
+				</p>			
+			<div style = 'text-align: center'>
+				<table border = '1' class = 'center'><tr>
+					<th>Start Node</th><th>End Node</th>
+					<td rowspan = '2' class = 'width'><p>	
+						<input id='search' type = 'button' value = 'Search Routes' style = 'font-size: 18px;' />
+					</p></td></tr><tr>
+					<td><p>
+						<select id = 'nodeS' style = 'font-size: 16px;'>
+							<option selected = 'selected'>Select Start Node</option>
+						</select>
+						</p></td>	
+				
+						<td><p>
+						<select id = 'nodeD' style = 'font-size: 16px;'>
+							<option selected = 'selected'>Select End Node</option>
+						</select>
+						</p></td></tr>
+				</table>
+			</div>
+				</form>
+			<p><span id = 'table'></span></p>
+		</div>
+		
+		<div id = 'footer'>
+			<p>2010 Copyright © Martin Kiss, CCCU
+			<a href="http://validator.w3.org"><img
+				src="http://www.w3.org/Icons/valid-xhtml11-blue"
+				alt="Valid XHTML 1.1" height="30" width="90" class = 'xhtml' /></a>
+			</p>	
+		</div>	
+		<script type = "text/javascript" src="networkModel.js"> > //load functions and create global variables for best path tool
+		</script> 
+	</body> 
+</html>
