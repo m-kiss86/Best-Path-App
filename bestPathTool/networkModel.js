@@ -215,7 +215,6 @@ function traverseNetwork (){
 	}
 }	
 
-// MY JAVASCRIPT CODE IS BELLOW ------------------------------------------------->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
 var numbers = new Array(); // array for storing weightings of possible routes
 
